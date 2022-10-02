@@ -5,13 +5,15 @@ using namespace std;
 
 
 /******************************************************************************
-* 
+* This class contains all attributes and methods necessary to perform the login
+* verification steps. The user may choose to create an account or attempt to
+* log onto an already existing account.
 ******************************************************************************/
 class loginManager {
 
-
 private:
 	
+	// All necessary attributes for performing the credential verification.
 	vector<string> userNames;
 	vector<string> userPassWords;
 	string userName;
@@ -21,6 +23,8 @@ private:
 
 public:
 	
+	// The simple method for adding new usernames and passwords to the vectors
+	// containing all login credentials.
 	void createAccount()
 	{
 		cout << "Enter a username or email to identify your new account: ";
@@ -31,6 +35,8 @@ public:
 		userPassWords.push_back(userPassWord);
 	}
 
+	// The method that performs all steps to verify if the user has input a
+	// correct username and password. The user is limited to 5 failed attempts.
 	void loginAttempt()
 	{
 		int userNameIndex;
@@ -86,6 +92,11 @@ public:
 	}
 };
 
+/******************************************************************************
+* The main function initializes the loginManager class as an object and begins
+* the program by allowing the user to select from a list of options. Based on
+* their choice, a specific method from the loginManager class will be called.
+******************************************************************************/
 int main()
 {
 	loginManager login;
