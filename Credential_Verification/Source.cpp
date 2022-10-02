@@ -3,6 +3,10 @@
 #include <algorithm>
 using namespace std;
 
+
+/******************************************************************************
+* 
+******************************************************************************/
 class loginManager {
 
 
@@ -55,21 +59,25 @@ public:
 					cout << "\nYou have successfully logged in! Welcome " << userNameAttempt << endl;
 					return;
 					}
+					
 					else
 					{
 						cout << "\nUsername or password incorrect. Please try again." << endl;
 					}
 				}
+
 				else
 				{
 					cout << "\nUsername or password incorrect. Please try again." << endl;
 				}
 			}
+
 			else
 			{
 				cout << "\nUsername or password incorrect. Please try again." << endl;
 			}
 		}
+
 		if (loginAttempts == 5)
 		{
 			cout << "\nToo many login attempts. Please try again later." << endl;
