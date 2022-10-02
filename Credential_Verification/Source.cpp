@@ -69,18 +69,21 @@ public:
 					else
 					{
 						cout << "\nUsername or password incorrect. Please try again." << endl;
+						loginAttempts++;
 					}
 				}
 
 				else
 				{
 					cout << "\nUsername or password incorrect. Please try again." << endl;
+					loginAttempts++;
 				}
 			}
 
 			else
 			{
 				cout << "\nUsername or password incorrect. Please try again." << endl;
+				loginAttempts++;
 			}
 		}
 
