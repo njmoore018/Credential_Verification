@@ -4,7 +4,7 @@ This program has been created to demonstrate my abilities with the c++ programmi
 
 When running the program, the user can "create an account" with a username and password that will then be linked to each other so the user may "login" using their newly created credentials.
 
-You can view a demonstration of the program here: [Software Demo Video](http://youtube.link.goes.here)
+You can view a demonstration of the program here: [Software Demo Video](https://youtu.be/VFVCeMtC1lo)
 
 # Development Environment
 
